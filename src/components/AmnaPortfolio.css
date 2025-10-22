@@ -1,0 +1,77 @@
+/* === Layout Basics === */
+.portfolio-container {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  padding: 40px 10%;
+  line-height: 1.6;
+}
+
+/* === Section Styling === */
+.section {
+  margin-bottom: 60px;
+}
+.section:last-child {
+  margin-bottom: 100px;
+}
+
+.section-title {
+  text-align: center;
+  color: #0b3a8d;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.section-box {
+  border: 1.5px solid #0b3a8d;
+  border-radius: 15px;
+  padding: 25px 30px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-box p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* === Titles and Lists === */
+.sub-title {
+  color: #0b3a8d;
+  font-weight: 700;
+  margin: 15px 0 10px;
+}
+
+.degree-text {
+  margin-bottom: 20px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: 6px;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .portfolio-container {
+    padding: 25px 5%;
+  }
+
+  .section-box {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+}

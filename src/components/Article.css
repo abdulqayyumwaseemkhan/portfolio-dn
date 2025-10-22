@@ -1,0 +1,146 @@
+/* .blog-card {
+  width: 76%;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 50px;
+  gap: 20px;
+}
+.article-pic {
+  border-radius: 15px;
+  width: 550px;
+  height: 240px;
+  border: 1px solid #00276e;
+  overflow: hidden;
+}
+.article-pic img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+
+  object-fit: cover;
+}
+.article-heading {
+  display: flex;
+  justify-content: space-between;
+  color: #00276e;
+  padding: 5px 0px;
+  margin-top: 5px;
+}
+.desc-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.desc-area h4 {
+  color: #00276e;
+}
+.desc-area p {
+  color: #555555;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: auto;
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .article-pic {
+    border-radius: 15px;
+    width: 350px;
+    height: 240px;
+    border: 1px solid #00276e;
+  }
+} */
+.blog-card {
+  width: 76%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 30px auto;
+  gap: 20px;
+  flex-wrap: wrap; /* ensures layout stays neat when many cards */
+}
+.all-cards:last-child {
+  margin-bottom: 110px;
+}
+
+/* Image box */
+.article-pic {
+  flex-shrink: 0; /* prevent image box from shrinking */
+  border-radius: 15px;
+  width: 550px;
+  height: 350px;
+  border: 1px solid #00276e;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.article-pic img:hover {
+  transform: scale(1.05);
+}
+
+/* Text area */
+.article-heading {
+  display: flex;
+  justify-content: space-between;
+  color: #00276e;
+  padding: 5px 0;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+
+.desc-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.desc-area h4 {
+  color: #00276e;
+  margin-bottom: 0;
+}
+
+.desc-area p {
+  color: #555555;
+  text-align: justify;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .blog-card {
+    flex-direction: column;
+    width: 95%;
+    margin-top: 30px;
+  }
+
+  .article-pic {
+    width: 100%;
+    height: 320px;
+  }
+
+  .desc-area {
+    max-width: 100%;
+  }
+
+  .article-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

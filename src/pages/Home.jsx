@@ -14,7 +14,7 @@ export default function Home() {
           marginBottom: "1.5rem",
         }}
       >
-        Recent Blogs
+        Recent Project
       </h3>
 
       <HomeArticles />
